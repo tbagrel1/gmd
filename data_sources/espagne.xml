@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE annuaire SYSTEM "annuaire.dtd">
+<annuaire>
+    <personne id="1">
+      <prenom>Patricia</prenom>
+      <nom>Marquéz</nom>
+      <telephone>017684536</telephone>
+      <age>23</age>
+      <ville>Madrid</ville>
+      <email>patricia.marquez@mobistar.es</email>
+    </personne>
+    <personne id="2">
+      <prenom>Carlos</prenom>
+      <nom>Còntreras</nom>
+      <telephone>0876354712</telephone>
+      <age>34</age>
+      <ville>Toledo</ville>
+      <email>carlos.contreras@mobistar.es</email>
+    </personne>
+    <personne id="3">
+      <prenom>Gabriela</prenom>
+      <nom>Fernandez Ludoviz</nom>
+      <telephone>0893847325</telephone>
+      <age>18</age>
+      <ville>Sevilla</ville>
+      <email>gabriela.fernandez@mobistar.es</email>
+    </personne>
+    <personne id="4">
+      <prenom>Alehandro</prenom>
+      <nom>Fuentes</nom>
+      <telephone>0826354712</telephone>
+      <age>37</age>
+      <ville>Barcelona</ville>
+      <email>alehandro.fuentes@mobistar.es</email>
+    </personne>
+    <personne id="5">
+      <prenom>Carolina</prenom>
+      <nom>Machado</nom>
+      <telephone>09784367121</telephone>
+      <age>46</age>
+      <ville>Madrid</ville>
+      <email>carolina.machado@mobistar.es</email>
+    </personne>
+    <personne id="6">
+      <prenom>Lolita Lagrandés</prenom>
+      <nom>Urtado</nom>
+      <telephone>0176438712</telephone>
+      <age>22</age>
+      <ville>Sevilla</ville>
+      <email>lolita.urtado@mobistar.es</email>
+    </personne>
+    <personne id="7">
+      <prenom>Lùis</prenom>
+      <nom>Pedreira</nom>
+      <telephone>0687237676</telephone>
+      <age>49</age>
+      <ville>Barcelona</ville>
+      <email>luis.pedreira@mobistar.es</email>
+    </personne>
+    <personne id="8">
+      <prenom>Huan</prenom>
+      <nom>Cerrano</nom>
+      <telephone>0498987752</telephone>
+      <age>25</age>
+      <ville>Madrid</ville>
+      <email>huan.cerrano@mobistar.es</email>
+    </personne>
+    <personne id="9">
+      <prenom>Pedròs</prenom>
+      <nom>Picapiedra</nom>
+      <telephone>0187873374</telephone>
+      <age>28</age>
+      <ville>Valencia</ville>
+      <email>pedro.picapiedra@mobistar.es</email>
+    </personne>
+    <personne id="10">
+      <prenom>Gustavo</prenom>
+      <nom>Andreade</nom>
+      <telephone>0999873267</telephone>
+      <age>32</age>
+      <ville>Valencia</ville>
+      <email>gustavo.andreade@mobistar.es</email>
+    </personne>
+    <personne id="11">
+      <prenom>Maria</prenom>
+      <nom>Gònsaléz</nom>
+      <telephone>0367668865</telephone>
+      <age>21</age>
+      <ville>Cordoba</ville>
+      <email>maria.gonsalez@mobistar.es</email>
+    </personne>
+</annuaire>

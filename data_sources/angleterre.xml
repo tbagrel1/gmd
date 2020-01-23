@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE annuaire SYSTEM "annuaire.dtd">
+<annuaire>
+    <personne id="1">
+      <prenom>John</prenom>
+      <nom>Smith Langley</nom>
+      <telephone>097687531</telephone>
+      <age>27</age>
+      <ville>London</ville>
+      <email>john.smith@bt.com</email>
+    </personne>
+    <personne id="2">
+      <prenom>Jan</prenom>
+      <nom>Asling</nom>
+      <telephone>0789436721</telephone>
+      <age>33</age>
+      <ville>Fulham</ville>
+      <email>jan.asling@bt.com</email>
+    </personne>
+    <personne id="3">
+      <prenom>Barbara</prenom>
+      <nom>Carberry</nom>
+      <telephone>0743557612</telephone>
+      <age>22</age>
+      <ville>Lambeth</ville>
+      <email>barbara.carberry@bt.com</email>
+    </personne>
+    <personne id="4">
+      <prenom>Linda</prenom>
+      <nom>Burrows Meth</nom>
+      <telephone>0826354712</telephone>
+      <age>25</age>
+      <ville>London</ville>
+      <email>linda.burrows@bt.com</email>
+    </personne>
+    <personne id="5">
+      <prenom>Damian</prenom>
+      <nom>Smith Arners</nom>
+      <telephone>09784367121</telephone>
+      <age>35</age>
+      <ville>Kennington</ville>
+      <email>damian.smith@bt.com</email>
+    </personne>
+    <personne id="6">
+      <prenom>Elizabeth</prenom>
+      <nom>Stone</nom>
+      <telephone>0844568733</telephone>
+      <age>20</age>
+      <ville>Holborn</ville>
+      <email>elizabeth.stone@bt.com</email>
+    </personne>
+    <personne id="7">
+      <prenom>Ian</prenom>
+      <nom>Macilwain</nom>
+      <telephone>0589900045</telephone>
+      <age>32</age>
+      <ville>Fulham</ville>
+      <email>ian.macilwain@bt.com</email>
+    </personne>
+    <personne id="8">
+      <prenom>Christina</prenom>
+      <nom>Russo</nom>
+      <telephone>0534342256</telephone>
+      <age>28</age>
+      <ville>Hackney One</ville>
+      <email>christina.russo@bt.com</email>
+    </personne>
+    <personne id="9">
+      <prenom>Lyn</prenom>
+      <nom>Lowe</nom>
+      <telephone>0632454565</telephone>
+      <age>30</age>
+      <ville>London</ville>
+      <email>lyn.lowe@bt.com</email>
+    </personne>
+    <personne id="10">
+      <prenom>Emma</prenom>
+      <nom>Lordan Belley</nom>
+      <telephone>0756563412</telephone>
+      <age>38</age>
+      <ville>Holborn</ville>
+      <email>emma.lordan@bt.com</email>
+    </personne>
+    <personne id="11">
+      <prenom>Cindy</prenom>
+      <nom>Lea</nom>
+      <telephone>0588986712</telephone>
+      <age>26</age>
+      <ville>London</ville>
+      <email>cindy.lea@bt.com</email>
+    </personne>
+</annuaire>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT annuaire (personne+)>
+<!ELEMENT personne (prenom, nom, telephone, age, ville, email)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ATTLIST personne id CDATA #REQUIRED>

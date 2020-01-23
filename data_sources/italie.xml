@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE annuaire SYSTEM "annuaire.dtd">
+<annuaire>
+    <personne id="1">
+      <prenom>Giuseppe</prenom>
+      <nom>Alfieri Lanterna</nom>
+      <telephone>0813475678</telephone>
+      <age>18</age>
+      <ville>Firenze</ville>
+      <email>giuseppe.alfieri@tim.it</email>
+    </personne>
+    <personne id="2">
+      <prenom>Maurò</prenom>
+      <nom>Torno Subito</nom>
+      <telephone>0667849870</telephone>
+      <age>24</age>
+      <ville>Torino</ville>
+      <email>mauro.torno@tim.it</email>
+    </personne>
+    <personne id="3">
+      <prenom>Adriana</prenom>
+      <nom>Lazzaro</nom>
+      <telephone>0298768732</telephone>
+      <age>28</age>
+      <ville>Milano</ville>
+      <email>adriana.lazzaro@tim.it</email>
+    </personne>
+    <personne id="4">
+      <prenom>Livio</prenom>
+      <nom>Marrocco</nom>
+      <telephone>082365473805</telephone>
+      <age>30</age>
+      <ville>Caserta</ville>
+      <email>livio.marrocco@tim.it</email>
+    </personne>
+    <personne id="5">
+      <prenom>Gianni</prenom>
+      <nom>Romario Il Grande</nom>
+      <telephone>08167985412</telephone>
+      <age>19</age>
+      <ville>Napoli</ville>
+      <email>gianni.romario@tim.it</email>
+    </personne>
+    <personne id="6">
+      <prenom>Floriana</prenom>
+      <nom>La bella</nom>
+      <telephone>33578653409</telephone>
+      <age>24</age>
+      <ville>Firenze</ville>
+      <email>floriana.chiaravalle@tim.it</email>
+    </personne>
+    <personne id="7">
+      <prenom>Daniela</prenom>
+      <nom>Rossini Lante della Rovere</nom>
+      <telephone>09567549876</telephone>
+      <age>35</age>
+      <ville>Catania</ville>
+      <email>daniela.rossi@tim.it</email>
+    </personne>
+    <personne id="8">
+      <prenom>Daniela</prenom>
+      <nom>Rossi</nom>
+      <telephone>09567549876</telephone>
+      <age>35</age>
+      <ville>Catania</ville>
+      <email>daniela.rossi@tim.it</email>
+    </personne>
+    <personne id="9">
+      <prenom>Manuela</prenom>
+      <nom>Valenti</nom>
+      <telephone>08235645980</telephone>
+      <age>22</age>
+      <ville>Caserta</ville>
+      <email>manuela.valenti@tim.it</email>
+    </personne>
+    <personne id="10">
+      <prenom>Davide</prenom>
+      <nom>Corradini</nom>
+      <telephone>0678569809</telephone>
+      <age>27</age>
+      <ville>Roma</ville>
+      <email>davide.corradini@tim.it</email>
+    </personne>
+    <personne id="11">
+      <prenom>Marco</prenom>
+      <nom>Trottà</nom>
+      <telephone>0287657698</telephone>
+      <age>37</age>
+      <ville>Milano</ville>
+      <email>marco.trotta@tim.it</email>
+    </personne>
+</annuaire>
