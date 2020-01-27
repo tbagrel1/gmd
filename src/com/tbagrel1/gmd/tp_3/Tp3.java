@@ -1,6 +1,7 @@
 package com.tbagrel1.gmd.tp_3;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.document.Document;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.Directory;
@@ -10,24 +11,29 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Tp3 {
 
     public static final String LUCENE_ROOT_PATH = "output/lucene";
     public static final String INPUT_FILE_PATH = "data_sources/drugbank.txt";
 
-    public static void index() throws IOException {
-        Directory memoryIndex = FSDirectory.open(Paths.get(LUCENE_ROOT_PATH));
+    public static void index(List<Document> documents) throws IOException {
+        Directory luceneDirectory = FSDirectory.open(Paths.get(LUCENE_ROOT_PATH));
         StandardAnalyzer analyzer = new StandardAnalyzer();
         IndexWriterConfig indexWriterConfig = new IndexWriterConfig(analyzer);
-        IndexWriter writer = new IndexWriter(memoryIndex, indexWriterConfig);
+        IndexWriter writer = new IndexWriter(luceneDirectory, indexWriterConfig);
         // Document document = new Document();
     }
 
     public static void main(String[] args) throws Exception {
         byte[] data = Files.readAllBytes(Paths.get(INPUT_FILE_PATH));
         RawDrugCardParser parser = new RawDrugCardParser(data);
-        List<RawDrugCard> cards = parser.parse();
-        System.out.println(cards);
+        List<Document> documents = parser.parse().stream()
+            .map(rawDrugCard -> new DrugCard(rawDrugCard))
+            .map(drugCard -> drugCard.toDocument())
+            .collect(Collectors.toList());
+        index(documents);
+        System.out.println("Processing done.");
     }
 }

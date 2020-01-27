@@ -37,4 +37,8 @@ public class RawDrugCard {
     public String toString() {
         return String.format("DrugCard#%s", id);
     }
+
+    public String getField(String genericNameFieldName) {
+        return this.fields.get(genericNameFieldName);
+    }
 }
