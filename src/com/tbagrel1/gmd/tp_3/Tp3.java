@@ -26,8 +26,8 @@ public class Tp3 {
 
     public static void main(String[] args) throws Exception {
         byte[] data = Files.readAllBytes(Paths.get(INPUT_FILE_PATH));
-        DrugCardParser parser = new DrugCardParser(data);
-        List<DrugCard> cards = parser.parse();
+        RawDrugCardParser parser = new RawDrugCardParser(data);
+        List<RawDrugCard> cards = parser.parse();
         System.out.println(cards);
     }
 }

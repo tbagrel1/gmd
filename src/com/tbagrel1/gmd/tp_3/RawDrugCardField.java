@@ -1,15 +1,15 @@
 package com.tbagrel1.gmd.tp_3;
 
-public class DrugCardField {
+public class RawDrugCardField {
     protected String name;
     protected String value;
 
-    public DrugCardField() {
+    public RawDrugCardField() {
         this.name = null;
         this.value = "";
     }
 
-    public DrugCardField(String name, String value) {
+    public RawDrugCardField(String name, String value) {
         this.name = name;
         this.value = value;
     }

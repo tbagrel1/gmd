@@ -1,18 +1,18 @@
 package com.tbagrel1.gmd.tp_3;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
-public class DrugCard {
+public class RawDrugCard {
     protected String id;
-    protected List<DrugCardField> fields;
+    protected Map<String, String> fields;
 
-    public DrugCard() {
+    public RawDrugCard() {
         this.id = null;
-        this.fields = new ArrayList<>();
+        this.fields = new HashMap<>();
     }
 
-    public DrugCard(String id, List<DrugCardField> fields) {
+    public RawDrugCard(String id, Map<String, String> fields) {
         this.id = id;
         this.fields = fields;
     }
@@ -25,12 +25,12 @@ public class DrugCard {
         this.id = id;
     }
 
-    public List<DrugCardField> getFields() {
+    public Map<String, String> getFields() {
         return fields;
     }
 
-    public void addField(DrugCardField field) {
-        this.fields.add(field);
+    public void addField(RawDrugCardField field) {
+        this.fields.put(field.getName(), field.getValue());
     }
 
     @Override

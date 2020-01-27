@@ -3,7 +3,7 @@ package com.tbagrel1.gmd.tp_3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DrugCardParser {
+public class RawDrugCardParser {
     private static final byte[] BEGIN_CARD_TEXT = "#BEGIN_DRUGCARD ".getBytes();
     private static final byte[] END_CARD_TEXT = "#END_DRUGCARD ".getBytes();
     private static final byte[] DOUBLE_NEWLINE = "\n\n".getBytes();
@@ -15,10 +15,10 @@ public class DrugCardParser {
     protected int readPosition;
     protected int beginPosition;
     protected int length;
-    protected DrugCardField inProgressField;
-    protected DrugCard inProgressCard;
+    protected RawDrugCardField inProgressField;
+    protected RawDrugCard inProgressCard;
 
-    public DrugCardParser(byte[] data) {
+    public RawDrugCardParser(byte[] data) {
         this.data = data;
     }
 
@@ -67,7 +67,7 @@ public class DrugCardParser {
     }
 
     protected boolean readField() {
-        inProgressField = new DrugCardField();
+        inProgressField = new RawDrugCardField();
         if (!readExpected(BEGIN_FIELD_TEXT)) {
             return false;
         }
@@ -90,7 +90,7 @@ public class DrugCardParser {
         return true;
     }
 
-    protected DrugCardField gatherField() {
+    protected RawDrugCardField gatherField() {
         return inProgressField;
     }
 
@@ -99,7 +99,7 @@ public class DrugCardParser {
     }
 
     protected boolean readCard() {
-        inProgressCard = new DrugCard();
+        inProgressCard = new RawDrugCard();
         if (!readExpected(BEGIN_CARD_TEXT)) {
             return false;
         }
@@ -120,12 +120,12 @@ public class DrugCardParser {
         return true;
     }
 
-    protected DrugCard gatherCard() {
+    protected RawDrugCard gatherCard() {
         return inProgressCard;
     }
 
-    public List<DrugCard> parse() throws Exception {
-        List<DrugCard> parsedCards = new ArrayList<>();
+    public List<RawDrugCard> parse() throws Exception {
+        List<RawDrugCard> parsedCards = new ArrayList<>();
         while (readCard()) {
             parsedCards.add(gatherCard());
         }
