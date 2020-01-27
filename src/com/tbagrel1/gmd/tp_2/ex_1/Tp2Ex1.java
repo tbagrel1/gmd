@@ -4,7 +4,6 @@ import com.tbagrel1.gmd.tp_2.PersonalInformation;
 import com.tbagrel1.gmd.utils.CsvWriter;
 import com.tbagrel1.gmd.utils.MysqlAssistant;
 
-import java.io.IOException;
 import java.nio.file.Paths;
 import java.sql.Connection;
 import java.util.List;
@@ -22,15 +21,11 @@ public class Tp2Ex1 {
                 }
             }
             CsvWriter csvWriter = new CsvWriter(Paths.get("output/mysql.csv"));
-            allInfo.stream()
-                .map(info -> info.toTuple())
-                .forEach(tuple -> {
-                    try {
-                        csvWriter.write(tuple);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                });
+
+            for (PersonalInformation info : allInfo) {
+                csvWriter.write(info.toTuple());
+            }
+
             csvWriter.finish();
         } catch (Exception e) {
             e.printStackTrace();

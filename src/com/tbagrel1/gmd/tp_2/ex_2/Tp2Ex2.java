@@ -3,7 +3,6 @@ package com.tbagrel1.gmd.tp_2.ex_2;
 import com.tbagrel1.gmd.tp_2.PersonalInformation;
 import com.tbagrel1.gmd.utils.CsvWriter;
 
-import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
@@ -30,15 +29,10 @@ public class Tp2Ex2 {
             Path outputPath = Paths.get("output/" + filePath.getFileName().toString().replace(".xml", "") + ".csv");
             CsvWriter csvWriter = new CsvWriter(outputPath);
 
-            allInfo.stream()
-                .map(info -> info.toTuple())
-                .forEach(tuple -> {
-                    try {
-                        csvWriter.write(tuple);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                });
+            for (PersonalInformation info : allInfo) {
+                csvWriter.write(info.toTuple());
+            }
+
             csvWriter.finish();
         } catch (Exception e) {
             e.printStackTrace();

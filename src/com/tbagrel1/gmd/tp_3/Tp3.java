@@ -24,13 +24,9 @@ public class Tp3 {
         StandardAnalyzer analyzer = new StandardAnalyzer();
         IndexWriterConfig indexWriterConfig = new IndexWriterConfig(analyzer);
         IndexWriter writer = new IndexWriter(luceneDirectory, indexWriterConfig);
-        documents.stream().forEach(document -> {
-            try {
-                writer.addDocument(document);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+        for (Document document : documents) {
+            writer.addDocument(document);
+        }
         writer.forceMerge(1);
         writer.close();
         long end = System.currentTimeMillis();
