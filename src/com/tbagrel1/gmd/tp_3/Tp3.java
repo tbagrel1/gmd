@@ -31,7 +31,7 @@ public class Tp3 {
                 e.printStackTrace();
             }
         });
-        writer.commit();
+        writer.forceMerge(1);
         writer.close();
         long end = System.currentTimeMillis();
         System.out.println(String.format(
