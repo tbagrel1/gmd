@@ -35,7 +35,7 @@ public class RawDrugCard {
 
     @Override
     public String toString() {
-        return String.format("DrugCard#%s", id);
+        return String.format("RawDrugCard#%s", id);
     }
 
     public String getField(String genericNameFieldName) {
