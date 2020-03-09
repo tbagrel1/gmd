@@ -1,5 +1,5 @@
 **/.directory
-out/
+**/build/
+**/output/
 .idea/
-output/
-data_sources/drugbank.txt
+tp_lucene/data_sources/drugbank.txt
